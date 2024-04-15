@@ -36,4 +36,13 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+
+// Define the main page endpoint
+app.get('/', (req, res) => {
+  res.json({ message: 'Hello World' });
+});
+
+
+
+
 module.exports = app;
